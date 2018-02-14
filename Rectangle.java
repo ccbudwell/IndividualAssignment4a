@@ -14,11 +14,21 @@ class Rectangle{
     System.out.print("Enter the width of your rectangle");
     double width = in.nextDouble();
     
-    double area = length * width;
-    double perimeter = 2 * (length + width);
+    double area = getArea(length, width);
+    double perimeter = getPerimeter(length, width);
+
     
     System.out.println("The area of your rectangle is " + area);
     System.out.println("The perimeter of your rectangle is " + perimeter);
     
   }
+  
+  public static double getArea(double len, double wid) {
+    return len * wid;
+  }
+  
+  public static double getPerimeter(double len, double wid) {
+    return 2 * (len + wid);
+  }
+
 }
