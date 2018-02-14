@@ -16,6 +16,7 @@ class Rectangle{
     
     double area = getArea(length, width);
     double perimeter = getPerimeter(length, width);
+
     
     System.out.println("The area of your rectangle is " + area);
     System.out.println("The perimeter of your rectangle is " + perimeter);
@@ -29,4 +30,5 @@ class Rectangle{
   public static double getPerimeter(double len, double wid) {
     return 2 * (len + wid);
   }
+
 }
